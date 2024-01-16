@@ -23,6 +23,7 @@ div.blog-card {
     border-radius: 15px;
     box-shadow: 5px 5px hsl(0, 0%, 7%);
     padding: 15px;
+    transition: box-shadow 0.2s ease-in-out;
 }
 
 img.blog-illustration {
@@ -30,4 +31,12 @@ img.blog-illustration {
     max-width: 100%;
     object-fit: contain;
     border-radius: 15px;
+}
+
+div.blog-card:hover {
+    box-shadow: 10px 10px hsl(0, 0%, 7%);
+}
+
+div.blog-card h3:hover {
+    color:hsl(47, 88%, 63%);
 }
