@@ -14,9 +14,10 @@ body {
     gap: 10px;
     align-items: center;
     justify-content: center;
+    font-family: 'Figtree', sans-serif;
 }
 
-div.blog-card {
+.blog-card {
     background-color: hsl(0, 0%, 100%);
     width: calc(0.25*1440px);
     border: 1px solid hsl(0, 0%, 7%);
@@ -33,10 +34,19 @@ img.blog-illustration {
     border-radius: 15px;
 }
 
-div.blog-card:hover {
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.blog-card:hover {
     box-shadow: 10px 10px hsl(0, 0%, 7%);
 }
 
-div.blog-card h3:hover {
+.blog-card h1:hover {
     color:hsl(47, 88%, 63%);
 }
