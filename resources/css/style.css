@@ -3,6 +3,7 @@
     --color-white: hsl(0, 0%, 100%);
     --color-grey: hsl(0, 0%, 50%);
     --color-black: hsl(0, 0%, 7%);
+    --color-yellow: hsl(47, 88%, 63%);
 }
 
 /* Global Styles */
@@ -13,7 +14,7 @@
 
 body {
     height: 100vh;
-    background-color: hsl(47, 88%, 63%);
+    background-color: var(--color-yellow);
     display: flex;
     flex-direction: column; 
     flex: 1 auto;
@@ -43,7 +44,7 @@ img.blog-illustration {
 }
 
 .tag {
-    background-color: hsl(47, 88%, 63%);
+    background-color: var(--color-yellow);
     border-radius: 5px;
     padding: 5px 13px;
     margin: 13px 0px;
@@ -97,7 +98,7 @@ img.blog-illustration {
 }
 
 .blog-card:hover>h1 {
-    color:hsl(47, 88%, 63%);
+    color:var(--color-yellow);
     transition: color 0.2s smooth;
 }
 
