@@ -23,7 +23,7 @@ body {
     border: 1px solid hsl(0, 0%, 7%);
     border-radius: 15px;
     box-shadow: 5px 5px hsl(0, 0%, 7%);
-    padding: 15px;
+    padding: 20px;
     transition: box-shadow 0.2s ease-in-out;
 }
 
@@ -32,6 +32,40 @@ img.blog-illustration {
     max-width: 100%;
     object-fit: contain;
     border-radius: 15px;
+}
+
+.tag {
+    background-color: hsl(47, 88%, 63%);
+    border-radius: 5px;
+    padding: 5px 13px;
+    margin: 13px 0px;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.blog-card h1 {
+    font-weight: 800;
+    font-size: 27px;
+    margin: 15px 0px;
+}
+
+.blog-text {
+    color: hsl(0, 0%, 50%);
+    font-weight: 600;
+    margin: 20px 0px;
+}
+
+.blog-author {
+    width: 100%;
+    display: flex;
+    flex: 1 auto;
+    align-items: center;
+    gap: 10px;
+}
+
+.blog-author img {
+    width: 30px;
+    object-fit: contain;
 }
 
 .attribution { 
