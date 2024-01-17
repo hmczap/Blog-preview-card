@@ -1,3 +1,9 @@
+/* Variables */
+:root {
+    --color-white: hsl(0, 0%, 100%);
+    --color-grey: hsl(0, 0%, 50%);
+    --color-black: hsl(0, 0%, 7%);
+}
 
 /* Global Styles */
 * {
@@ -11,21 +17,23 @@ body {
     display: flex;
     flex-direction: column; 
     flex: 1 auto;
-    gap: 10px;
+    gap: 15px;
     align-items: center;
     justify-content: center;
     font-family: 'Figtree', sans-serif;
 }
 
 .blog-card {
-    background-color: hsl(0, 0%, 100%);
+    background-color: var(--color-white);
     width: calc(0.25*1440px);
-    border: 1px solid hsl(0, 0%, 7%);
+    border: 1px solid var(--color-black);
     border-radius: 15px;
-    box-shadow: 5px 5px hsl(0, 0%, 7%);
+    box-shadow: 5px 5px var(--color-black);
     padding: 20px;
     transition: box-shadow 0.2s ease-in-out;
 }
+
+/* Card Content Styles */
 
 img.blog-illustration {
     max-height: 100%;
@@ -43,14 +51,17 @@ img.blog-illustration {
     display: inline-block;
 }
 
+/* Card Text Styles */
+
 .blog-card h1 {
     font-weight: 800;
     font-size: 27px;
     margin: 15px 0px;
+    transition: color 0.2s smooth;
 }
 
 .blog-text {
-    color: hsl(0, 0%, 50%);
+    color: var(--color-grey);
     font-weight: 600;
     margin: 20px 0px;
 }
@@ -68,6 +79,8 @@ img.blog-illustration {
     object-fit: contain;
 }
 
+/* Footer Styles */
+
 .attribution { 
     font-size: 11px; 
     text-align: center; 
@@ -77,10 +90,29 @@ img.blog-illustration {
     color: hsl(228, 45%, 44%); 
 }
 
+/* Active State Styles */
+
 .blog-card:hover {
-    box-shadow: 10px 10px hsl(0, 0%, 7%);
+    box-shadow: 10px 10px var(--color-black);
 }
 
-.blog-card h1:hover {
+.blog-card:hover>h1 {
     color:hsl(47, 88%, 63%);
+    transition: color 0.2s smooth;
+}
+
+/* Mobile Styles */
+
+@media (max-width: 375px) {
+    .blog-card {
+        width: calc(0.85*375px);
+    }
+
+    .blog-card h1 {
+        font-size: 23px;
+    }
+
+    .blog-text, .date, .tag {
+        font-size: smaller;
+    }
 }
